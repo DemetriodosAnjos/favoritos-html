@@ -1,0 +1,120 @@
+html {
+  font-size: 16px; /* base para cálculo de rem */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  /* 20px */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem; /* 20px */
+  margin-top: 1.875rem; /* 30px */
+}
+
+.card {
+  background: white;
+  border-radius: 0.625rem; /* 10px */
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+  width: 7.5rem; /* 120px */
+  text-align: center;
+  padding: 0.9375rem; /* 15px */
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 4rem; /* 64px */
+  height: 4rem;
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.card p {
+  margin: 0;
+  font-weight: bold;
+  color: #555;
+  font-size: 1rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+.footer a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo para tablets (até 640px) */
+@media (max-width: 40rem) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 7.5rem;
+    padding: 0.625rem; /* 10px */
+  }
+
+  .card img {
+    width: 3rem; /* 48px */
+    height: 3rem;
+  }
+
+  .card p {
+    font-size: 0.875rem; /* 14px */
+  }
+}
+
+/* Responsivo para celulares (até 320px) */
+@media (max-width: 20rem) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 15.625rem; /* 250px */
+    margin-bottom: 0.9375rem; /* 15px */
+  }
+
+  .card img {
+    width: 2.5rem; /* 40px */
+    height: 2.5rem;
+  }
+
+  .card p {
+    font-size: 0.8125rem; /* 13px */
+  }
+}
