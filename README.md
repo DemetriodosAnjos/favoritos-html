@@ -26,3 +26,10 @@ Uma página interativa que reúne seus sites preferidos em um layout visual e or
    ```bash
    git clone https://github.com/DemetriodosAnjos/favoritos-html.git
    ```
+
+🛠️ Tecnologias utilizadas
+HTML5
+
+CSS3
+
+JavaScript (Vanilla)
